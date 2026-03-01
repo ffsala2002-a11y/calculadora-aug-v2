@@ -25,5 +25,5 @@ export async function pegarImagens(nce) {
 
   return banco[nce] && banco[nce].length
     ? banco[nce]
-    : ["https://raw.githubusercontent.com/ffsala2002-a-y11/main/img/sem-imagem.jpg"];
+    : ["https://raw.githubusercontent.com/ffsala2002-a11y/produtos-imagens/main/img-produtos/sem_img.png"];
 }
