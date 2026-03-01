@@ -955,7 +955,8 @@ body #app .view .page .bottom-bar .box-btn .btn:nth-child(2).active {
   opacity: 1;
 }
 .img-produto {
-  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
   position: absolute;
   top: 1.2rem;
   border-radius: 7px;
