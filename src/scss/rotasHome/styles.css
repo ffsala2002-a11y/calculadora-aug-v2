@@ -569,7 +569,7 @@ body #app .view .page .rota .main-calculadora .box-list #lista .item .info-produ
   align-items: center;
   /*flex-direction: column;*/
   position: absolute;
-  top: 4.3rem;
+  top: 5.2rem;
   border-radius: 10px;
   border: solid 1.5px #E0E0E0;
   padding: 0.3rem 0.2rem;
@@ -955,9 +955,11 @@ body #app .view .page .bottom-bar .box-btn .btn:nth-child(2).active {
   opacity: 1;
 }
 .img-produto {
-  width: 50px;
+  width: 60px;
   position: absolute;
   top: 1.2rem;
+  border-radius: 7px;
+  border: solid 1.5px #272727;
 }
 
 @keyframes rootReverse {
