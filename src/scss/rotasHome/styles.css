@@ -807,6 +807,7 @@ body #app .view .page .rota .box-financ .box-config .box-arrendondar .round-box 
   accent-color: rgb(0, 145, 10);
 }
 body #app .view .page .rota .box-financ .box-config .result {
+  display: none;
   position: absolute;
   bottom: 16rem;
   left: 9.5rem;
