@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Financeira AUG</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="./src/scss/rotasHome/styles.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    
+    
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+        
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+                <!-- Páginas / rotas -->
+                <div id="home" class="rota active">
+                    <div class="topo">
+                        <h1 class="titulo-aug">
+                            AUG FINANCEIRA
+                            <span>Março • Mês da Mulher</span>
+                        </h1>
+                        
+                        
+                        <div class="btn-lateral">
+                            <button id="btn-lateral">
+                                <img src="./src/img/upload.png" alt="Imagem logo arquivo">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="menu-lateral">
+                        <div class="upload">
+                            <div class="tamb-title">
+                                <div class="box-img">
+                                    <img src="./src/img/AUG-removebg-preview.png" alt="Imagem logo do app Aug Financeira">
+                                    <span>Aug <span>Financeira</span></span>
+                                </div>
+                            </div>
+                            
+                            <div class="box-resumo-base">
+                                <div class="box-title">
+                                    <!--<h2 class="title">Resumo da Base</h2>-->
+                                </div>
+                                
+                                <div class="content-resumo">
+                                    <p></p> <span id="totalProdutos">0</span><strong> Produtos disponíveis</strong></p>
+                                    <p><span id="totalSaldo">0</span> <strong>Soma dos produtos</strong></p>
+                                    <p><span id="totalGarantias">0</span><strong>Garatias disponívies</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="upload-txt">
+                                <div class="box-title">
+                                    <img src="./src/img/open-folder.png" alt="Imagem icone pasta">
+                                    <h2 class="title">Importação Local</h2>
+                                </div>
+                                
+                                <div class="box-import">
+                                    <div class="box-input1">
+                                        <img src="./src/img/import.png" alt="imagem logo arquivo">
+                                        <input type="file" id="fileProdutos" hidden>
+                                        <label for="fileProdutos">Importar Produtos</label>
+                                    </div>
+                                    
+                                    <div class="box-input2">
+                                        <img src="./src/img/warranty.png" alt="imagem logo garantia">
+                                        <input type="file" id="fileGarantias" hidden>
+                                        <label for="fileGarantias">Importar Garantia</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="box-salvar-limpar">
+                                    <div class="flex mt-10 buttons">
+                                        <button id="btnSalvar">Salvar Base</button>
+                                        <button class="secondary" id="btnLimparBase">Limpar Base</button>
+                                    </div>
+                                    
+                                    <p id="msg" class="msg"></p>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="box-dev">
+                                <div class="box-title">
+                                    <img src="./src/img/info.png" alt="Imgame icone Informação">
+                                    <h2 class="title">Informações do Desenvolvedor</h2>
+                                </div>
+                                <div class="content">
+                                    <span>Desenvolvido por DiegoDev
+                                        Desenvolvedor Web especializado em aplicações modernas e soluções digitais.</span>
+                                    <a class="email" href="https://mail.google.com/mail/mu/mp/268/#tl/priority/%5Esmartlabel_personal">📩: Email</a>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="box-priv">
+                                <p class="priv">© 2026 DiegoDev — Todos os direitos reservados.</p>
+                            </div>
+                            
+                            <!---<div class="box-version">
+                                <span>Versão</span>
+                                <span>1.3.02</span>
+                            </div>--->
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="fundo"></div>
+                    
+                    
+                    <div class="main-calculadora">
+                        
+                        <div class="relative">
+                            <div class="box-input">
+                                <img class="img-lupa" src="./src/img/seach (1).png" alt="Imagem logo pesquisa">
+                                <input class="campo-input" placeholder="Buscar por NCE ou DESCRIÇÃO" type="text" id="busca">
+                            </div>
+                            
+                            <div id="sugestoes" class="sugestoes">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>NCE</th>
+                                            <th>Descrição</th>
+                                            <th>Preço</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="sugestoesBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="box-title">
+                            <!--<h2 class="title">Produtos Selecionados</h2>-->
+                            <img src="./src/img/down-arrow.png" alt="Imagem logo seta pra baixo">
+                        </div>
+                        
+                        <div class="box-list">
+                            
+                            <div id="lista"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div id="perfil" class="rota" data-rota="home">
+                    <div class="box-financ">
+                        <div class="topo-financ">
+                            <div class="title">
+                                <h1>Simulação Crediário</h1>
+                            </div>
+                        </div>
+                        
+                        <div class="box-config">
+                            <div class="taxa-financiamento">
+                                <div class="box">
+                                    <label>Taxa (%) por parcela</label>
+                                    <input type="number" id="taxa" value="11.9" step="0.01">
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="flex mt-10">
+                                <div class="box">
+                                    <label>Parcelas</label>
+                                    <select id="parcelas"></select>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="box-entrada">
+                                <div class="box">
+                                    <label>Entrada</label>
+                                    <input type="text" id="entrada" value="R$ 0,00">
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="box-arrendondar">
+                                <div class="round-box">
+                                    <input type="checkbox" id="arredondar">
+                                    <label for="arredondar"><strong>Arredondar valor das parcelas</strong></label>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="flex mt-10">
+                                <div class="box-btns">
+                                    <button id="btnCalcular">Calcular</button>
+                                    <button class="secondary" id="btnLimparItens">Limpar Itens</button>
+                                </div>
+                            </div>
+                            
+                            
+                            <div id="resultado" class="result"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom toolbar -->
+                <div class="bottom-bar">
+                    <div class="box-btn">
+                        <div class="btn active" onclick="mudarRota('home', this)">
+                            <img src="./src/img/box.png" alt="Imagem caixa de produto">
+                            <span>Produtos</span>
+                        </div>
+                        
+                        <div class="btn" onclick="mudarRota('perfil', this)">
+                            <img src="./src/img/accounts.png" alt="Imagem da calculadora">
+                            <span>Financiamento</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="modalCarrossel">
+                    
+                    <button id="fecharModal" class="btn-fechar">✕</button>
+                    
+                    <div class="carrossel-container">
+                        <div id="carrosselTrack"></div>
+                    </div>
+                    
+                    <div id="indicadores"></div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+        <!-- Roteamento do app-->
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script src="cordova.js"></script>
+        <script type="module" src="./main.js"></script>
+        <script src="./toolbar.js"></script>
+        <script src="./js/controle-app.js"></script>
+        
+</body>
+
+
+</html>
