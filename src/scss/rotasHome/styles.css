@@ -985,7 +985,7 @@ body #app .view .page .bottom-bar .box-btn .btn:nth-child(2).active {
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradienteMove 5s ease infinite;
+  animation: gradienteMove 3s ease infinite;
   letter-spacing: 3px;
 }
 
