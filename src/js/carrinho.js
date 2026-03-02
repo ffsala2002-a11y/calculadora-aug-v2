@@ -108,7 +108,7 @@ export async function render() {
     btnApagar.innerHTML = `<img src="./src/img/trash-can.png">`;
     btnApagar.onclick = () => { 
       carrinho = carrinho.filter(item => item.nce !== p.nce); 
-      salvarCarrinho(); render(); 
+      salvarCarrinho(); render(); resultado.style="display:none;";
     };
 
     div.appendChild(btnApagar);
