@@ -88,6 +88,7 @@ document.getElementById('btnLimparBase').addEventListener('click', () => {
 
 document.getElementById('btnLimparItens').addEventListener('click', () => {
   limparCarrinho();
+  resultado.style="display:none;";
   mostrarAlerta('Carrinho limpo.', 'info');
 });
 
@@ -214,4 +215,5 @@ lupaMovie();
 /////////////////////////
 //ATUALIZAR BASE RESUMO
 ////////////////////////
+
 atualizarResumoBase();
