@@ -956,7 +956,7 @@ body #app .view .page .bottom-bar .box-btn .btn:nth-child(2).active {
 }
 
 .indicador.ativo {
-  background: white;
+  background: #DF00E9;
   opacity: 1;
 }
 .img-produto {
