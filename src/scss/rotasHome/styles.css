@@ -20,6 +20,8 @@ body #app .view {
 }
 body #app .view .page {
   background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
   position: fixed;
   inset: 0;
   /* Conteúdo das páginas */
