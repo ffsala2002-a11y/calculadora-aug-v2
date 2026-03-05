@@ -1021,6 +1021,18 @@ body #app .view .page .bottom-bar .box-btn .btn:nth-child(2).active {
   background: linear-gradient(90deg, #ff4da6, #ffcc70);
 }
 
+/*Img sugestao*/
+.imgProduto{
+  width:40px;
+}
+
+.imgProduto img{
+  width:36px;
+  height:36px;
+  object-fit:contain;
+  border-radius:6px;
+}
+
 /* Responsivo */
 @media (max-width: 420px) {
   .titulo-aug {
