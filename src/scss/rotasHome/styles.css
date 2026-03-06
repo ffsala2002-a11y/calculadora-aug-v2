@@ -496,7 +496,7 @@ body #app .view .page .rota .main-calculadora .relative .sugestoes table thead t
   border: solid 1px;
 }
 body #app .view .page .rota .main-calculadora .relative .sugestoes table #sugestoesBody {
-  background-color: rgb(60, 60, 60);
+  background-color: rgba(185, 0, 120, 1);
 }
 body #app .view .page .rota .main-calculadora .relative .sugestoes table #sugestoesBody tr td {
   margin-top: 10px;
