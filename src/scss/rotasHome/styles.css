@@ -559,9 +559,33 @@ body #app .view .page .rota .main-calculadora .box-list #lista .item {
   font-size: 15px;
   border: solid 1px rgba(128, 0, 99, 1);
   color: #000000;
-  background: radial-gradient(circle, rgba(255, 202, 234, 1) 0%, rgba(135, 4, 85, 0.18) 100%);
+  overflow: hidden;
+  background:#111827;
+  /*background: radial-gradient(circle, rgba(255, 202, 234, 1) 0%, rgba(135, 4, 85, 0.18) 100%);*/
   transition: 0.6s ease;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(205, 0, 158, 0.79) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.aurora{
+  position:absolute;
+  inset:-50%;
+  background:radial-gradient(circle at 30% 30%, #FF00CA, transparent 40%),
+             radial-gradient(circle at 70% 40%, #FFC400, transparent 40%),
+             radial-gradient(circle at 50% 70%, #C300FF, transparent 40%);
+  filter:blur(60px);
+  opacity:0.6;
+  animation:auroraMove 6s linear infinite;
+}
+
+@keyframes auroraMove{
+  0%{
+    transform:rotate(0deg) scale(1);
+  }
+  50%{
+    transform:rotate(180deg) scale(1.2);
+  }
+  100%{
+    transform:rotate(360deg) scale(1);
+  }
 }
 body #app .view .page .rota .main-calculadora .box-list #lista .item:hover {
   transform: scale(1.05);
