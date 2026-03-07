@@ -58,6 +58,7 @@ export async function render() {
 
     div.innerHTML = `
       <div>
+      <div class="aurora"></div>
         <div class="box-img">
           <img class="img-produto" src="${imagemPrincipal}" data-nce="${p.nce}">
         </div>
