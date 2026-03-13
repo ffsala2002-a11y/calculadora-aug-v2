@@ -163,7 +163,7 @@ body {
   align-items: center;
   gap: 2rem;
   position: absolute;
-  z-index: 4;
+  z-index: 9999;
   margin: 0 auto;
   overflow: hidden;
   transform: translateX(-1000px);
