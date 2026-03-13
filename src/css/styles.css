@@ -178,7 +178,7 @@ body {
   height: 40%;
   position: absolute;
   top: 10rem;
-  z-index: 9999;
+  z-index: 3;
 }
 
 .menu-lateral .upload .tamb-title {
