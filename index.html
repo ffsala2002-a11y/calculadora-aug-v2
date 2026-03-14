@@ -2,6 +2,16 @@
 <html lang="pt-br">
 
 <head>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "f19e360b-2aea-4927-a0fa-b5a795790d1c",
+    });
+  });
+</script>
+    
     <link rel="stylesheet" href="./src/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -233,16 +243,6 @@
 </body>
 <script type="module" src="./main.js"></script>
 <script src="./toolbar.js"></script>
-
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "f19e360b-2aea-4927-a0fa-b5a795790d1c",
-    });
-  });
-</script>
 
 </html>
 
