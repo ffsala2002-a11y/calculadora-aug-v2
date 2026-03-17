@@ -1256,3 +1256,40 @@ body #app .view .page .rota.active {
     transform: translateY(1000px);
   }
 }
+
+
+
+
+.alerta-responsive {
+  visibility: hidden;
+}
+
+
+@media (min-width: 568px) {
+  .alerta-responsive {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    visibility: visible;
+    background: #000000;
+  }
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #FFFFFF;
+  }
+  
+  .content h1 {
+    font-size: 30px;
+  }
+}
