@@ -484,7 +484,27 @@ body {
 }
 
 
-.main-calculadora .relative .box-input label {
+.main-calculadora .relative .box-input .delete-input {
+  position: absolute;
+  right: 2rem;
+  top: 0.2rem;
+  visibility: hidden;
+  opacity: 0;
+  background: #CA0000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.main-calculadora .relative .box-input .campo-input:focus~.delete-input,
+.main-calculadora .relative .box-input .campo-input:valid~.delete-input {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+
+.main-calculadora .relative .box-input .label-movie {
   position: absolute;
   left: 2rem;
   top: 50%;
@@ -493,8 +513,8 @@ body {
   color: #FFFFFF;
 }
 
-.main-calculadora .relative .box-input .campo-input:focus~label,
-.main-calculadora .relative .box-input .campo-input:valid~label {
+.main-calculadora .relative .box-input .campo-input:focus~.label-movie,
+.main-calculadora .relative .box-input .campo-input:valid~.label-movie {
   top: -20px;
   padding: 0.3rem;
   border-radius: 20px;
