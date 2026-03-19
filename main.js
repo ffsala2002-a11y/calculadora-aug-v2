@@ -19,6 +19,8 @@ import { popupMobile } from './src/js/popup.js';
 
 iniciarBancoImagens();
 
+localStorage.clear();
+
 
 
 const fileProdutos = document.getElementById('fileProdutos');
