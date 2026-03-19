@@ -6,12 +6,12 @@ export function popupMobile() {
   const toast = document.getElementById("toast");
   const som = document.getElementById("som");
   
-  // 🌙 DARK MODE automático
+  // DARK MODE automático
   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     document.body.classList.add("dark");
   }
   
-  // 📅 abre 1 vez por dia
+  // Abre 1 vez por dia
   function abrirPopup() {
     const hoje = new Date().toLocaleDateString();
     const ultima = localStorage.getItem("popupData");
@@ -23,7 +23,7 @@ export function popupMobile() {
     }
   }
   
-  // ❌ fechar popup
+  // Fechar popup
   function fecharPopup() {
     popup.classList.remove("show");
     
@@ -34,7 +34,7 @@ export function popupMobile() {
     mostrarToast();
   }
   
-  // 🍞 toast
+  // Toast
   function mostrarToast() {
     toast.classList.add("show");
     
