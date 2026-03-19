@@ -12,6 +12,8 @@ import { lupaMovie } from './src/js/lupaMovie.js';
 
 import { popupMobile } from './src/js/popup.js';
 
+localStorage.clear();
+
 
 
 
@@ -19,7 +21,6 @@ import { popupMobile } from './src/js/popup.js';
 
 iniciarBancoImagens();
 
-sessionStorage.clear();
 
 
 
