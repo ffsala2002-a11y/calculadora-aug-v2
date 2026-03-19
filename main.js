@@ -366,6 +366,17 @@ busca.addEventListener('input', () => {
 });
 
 
+document.getElementById("deleteInput").addEventListener('click', () => {
+
+  busca.value = "";
+
+  sugestoes.style.display = 'none'
+
+  
+
+});
+
+
 
 // ================= PARCELAS =================
 
