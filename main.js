@@ -19,7 +19,7 @@ import { popupMobile } from './src/js/popup.js';
 
 iniciarBancoImagens();
 
-localStorage.clear();
+sessionStorage.clear();
 
 
 
