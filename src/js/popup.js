@@ -27,8 +27,8 @@ export function popupMobile() {
   function fecharPopup() {
     popup.classList.remove("show");
     
-    //const hoje = new Date().toLocaleDateString();
-    //localStorage.setItem("popupData", hoje);
+    const hoje = new Date().toLocaleDateString();
+    localStorage.setItem("popupData", hoje);
     
     som.play().catch(() => {});
     mostrarToast();
