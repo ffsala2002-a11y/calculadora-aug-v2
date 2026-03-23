@@ -15,8 +15,7 @@ import { popupMobile } from './src/js/popup.js';
 
 
 
-
-// 🔥 INICIA O BANCO DE IMAGENS PRIMEIRO
+//  INICIA O BANCO DE IMAGENS PRIMEIRO
 
 iniciarBancoImagens();
 
