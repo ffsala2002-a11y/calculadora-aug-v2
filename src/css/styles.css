@@ -271,6 +271,10 @@ body {
   top: -2.5rem;
 }
 
+.menu-lateral .upload .upload-txt .box-title video {
+  width: 40px;
+}
+
 .menu-lateral .upload .upload-txt .box-title img {
   width: 35px;
 }
