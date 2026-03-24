@@ -95,12 +95,12 @@ document.getElementById('btnCalcular').addEventListener('click', () => {
 
   resultado.style.display = 'flex';
   resultado.innerHTML = `
-    <p><strong>Total:</strong> ${r.total.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>
-    <p><strong>Entrada:</strong> ${r.entrada.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>
-    <p><strong>Financiado:</strong> ${r.financiado.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>
-    <p><strong>Parcelas:</strong> ${r.parcelas}x de ${r.valorParcela.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>
-    <p><strong>Total c/ juros:</strong> ${r.totalComJuros.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>
-    <p><strong>Juros:</strong> ${r.jurosAplicado.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>
+    <p><strong>Total:</strong> <span>${r.total.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span></p>
+    <p><strong>Entrada:</strong> <span>${r.entrada.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span></p>
+    <p><strong>Financiado:</strong> <span>${r.financiado.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span></p>
+    <p><strong>Parcelas:</strong> <span>${r.parcelas}x de ${r.valorParcela.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span></p>
+    <p><strong>Total c/ juros:</strong> <span>${r.totalComJuros.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span></p>
+    <p><strong>Juros:</strong> <span>${r.jurosAplicado.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</span></p>
   `;
 });
 
