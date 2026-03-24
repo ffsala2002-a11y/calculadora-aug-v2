@@ -55,7 +55,7 @@ export async function render() {
 
     const imagensProduto = await pegarImagens(p.nce);
 
-    // ✅ fallback garantido
+    //fallback garantido
     const imagemPrincipal = imagensProduto[0] || 
       "https://raw.githubusercontent.com/ffsala2002-a11y/produtos-imagens/main/img-produtos/sem_img.png";
 
@@ -122,7 +122,7 @@ export async function render() {
       render(); 
     };
 
-    // 🔹 garantia
+    //garantia
     const select = div.querySelector('.select-garantia');
     select.value = p.garantia;
     select.onchange = e => { 
@@ -131,7 +131,7 @@ export async function render() {
       render(); 
     };
 
-    // 🔹 botão apagar
+    // botão apagar
     const btnApagar = document.createElement('button');
     btnApagar.className = 'btn-apagar';
     btnApagar.innerHTML = `<img src="./src/img/trash-can.png">`;
@@ -148,7 +148,7 @@ export async function render() {
   }
 }
 
-// 🔥 CARROSSEL COMPLETO (robusto)
+// CARROSSEL COMPLETO (robusto)
 document.addEventListener("click", async e => {
   if (!e.target.classList.contains("img-produto")) return;
 
