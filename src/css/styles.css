@@ -769,7 +769,7 @@ body {
     radial-gradient(circle at 50% 70%, #6B0000, transparent 40%);
   filter: blur(60px);
   opacity: 0.6;
-  animation: auroraMove 7s linear infinite;
+  animation: auroraMove 4s linear infinite;
 }
 
 @keyframes auroraMove {
