@@ -199,15 +199,23 @@ function atualizarResumoBase() {
 }
 
 
-// AO CARREGAR O SITE, APAREÇA UM SPINER
+// AO CARREGAR O SITE, APAREÇA UM SPINER.
 const fundoSpiner = document.getElementById("fundo-spiner");
+const videoLoad = document.getElementById("video-load");
 
 window.addEventListener('load', () => {
   fundoSpiner.classList.add("active");
   
+  videoLoad.currency = 0;
+  videoLoad.muted = true;
+  videoLoad.play();
+  
   setTimeout(() => {
     fundoSpiner.classList.remove("active")
-  }, 2 * 1000)
+    
+    videoLoad.pause();
+    
+  }, 2.8 * 1000)
 });
 
 
